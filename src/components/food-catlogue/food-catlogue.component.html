@@ -1,0 +1,15 @@
+<p>food-catlogue</p>
+<button (click)="addNewFood()">add food</button>
+
+<button (click)="OnRetrivingFood()">fetch list</button>
+
+@for (item of cartlist ; track $index) {
+<div>
+  <p>{{ item.name }}</p>
+  <button (click)="decrease($index,item.id)">-</button>
+  <button>{{item.quantity}}</button>
+  <button (click)="increase($index,item.id)">+</button>
+</div>
+}@empty {
+<div>No items found in catlog , fetch the food catlog first</div>
+}
