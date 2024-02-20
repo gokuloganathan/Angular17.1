@@ -7,7 +7,7 @@ export class LocalstoreService {
   constructor() {}
 
   setCount(val: number) {
-    localStorage.setItem('data', JSON.stringify(arr));
+    // localStorage.setItem('data', JSON.stringify(arr));
   }
 
   getItem(data:string):any{
