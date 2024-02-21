@@ -20,7 +20,7 @@ export class AddFoodComponent {
   constructor(private foodService: FoodService){}
 
   addNewFood = new FormGroup<addFoodItem>({
-    id: new FormControl(''),
+    id: new FormControl(`${Math.floor(Math.random() * 1000 - 1)}`),
     name: new FormControl(''),
     price: new FormControl(0),
     category: new FormControl(''),
@@ -29,5 +29,4 @@ export class AddFoodComponent {
   onAddingFood(){
     // this.foodService.addNewFood(this.addNewFood.value)
   }
-
 }
