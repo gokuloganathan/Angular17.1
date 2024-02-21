@@ -1,4 +1,8 @@
+
 <p>signal works! </p>
+@if(condCount()) {
+    <p>{{condCount()}}</p>
+}
 <button (click)="setSignal()">signal</button>
 
 
