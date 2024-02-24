@@ -1,0 +1,9 @@
+<p>food-list</p>
+<input type="number" [formControl]="changeableVal">
+<button (click)="insert()">insert (+)</button>
+<button (click)="remove()">remove (-)</button>
+@for (a of arr; track $index) {
+    <div>{{a}}</div>
+}
+<p>signalized results</p>
+<p>{{refreshArr()}}</p>
